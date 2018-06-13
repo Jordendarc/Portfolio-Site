@@ -1,0 +1,80 @@
+#superHeader {
+  width: 90%;
+  height: 50px;
+  padding: 5px;
+  text-align: center;
+  /* border-style: : 0px solid black;*/
+  border-radius: 10px;
+  background-color: #A0C5E4;
+  margin:0 auto;
+  box-shadow: 5px 5px 10px grey;
+}
+#loginWidget {
+    width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #A0C5E4;
+    box-shadow:5px 5px 15px grey;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    /* border: 1px solid black; */
+}
+#loginWidget > h2 {
+    margin: 0;
+    padding: 2px;
+}
+#loginWidget form {
+    background-color: white;
+    /* border: 1px solid black;  */
+    padding: 0.5em 0;
+    border-radius: 0 0 10px 10px;
+}
+#loginWidget label {
+    width: 95px;
+    text-align: right;
+    display: inline-block;
+}
+#loginWidget div.stack {
+    margin: 1em 0;
+}
+div.ui-state-error {
+    padding: 4px 0;
+}
+div.pageWidget {
+    width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+#loginWidget #newUserButton{
+  background-color: #A0C5E4;
+}
+#loginWidget #mainPageForm {
+  border-bottom-style: solid;
+  text-align: center;
+  margin: 0 auto;
+  /* box-shadow: 5px 5px 50px grey; */
+}
+#timeNote p {
+  text-align: center;
+  margin: 0 auto;
+  background-color: #A0C5E4;
+}
+#background {
+  width: 75%;
+  height: 100%;
+  text-align: center;
+  box-shadow: 5px 5px 15px grey;
+  margin: auto;
+  background-color: #cccccc;
+}
+html, body {
+  height: 100%;
+}
+.g-recaptcha {
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
+}
+#container #superHeader {
+  background-color: white;
+}
