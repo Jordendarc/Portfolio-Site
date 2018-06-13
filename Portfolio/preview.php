@@ -1,75 +1,54 @@
 <!DOCTYPE html>
-<!-- Created by Professor Wergeles for CS2830 at the University of Missouri -->
 <html>
 	<head>
     <style>
     #vid {
       margin:0 auto;
-			text-align: center;
+      text-align: center;
     }
     .textBox {
 
       text-align: center;
-      /* position: fixed; */
       padding: 20px 15px 20px 15px;
       height: 75px;
       border: 1px solid black;
-			width: 560px;
+      width: 560px;
       background-color: white;
-			margin:0 auto;
-      /* position: absolute; */
-      /* top:0;
-      bottom: 0;
-      left: 0;
-      right: 0; */
-      /* margin-right: 300px;
-      float: right; */
+      margin:0 auto;
     }
     .buttons {
       border-radius: 25px;
       padding: 10px 10px;
-      /* margin-left: 20px;*/
-      /* margin-bottom: 200px; */
-			margin:0 auto;
+      margin:0 auto;
     }
     .pButtons {
       border-radius: 25px;
-      /* float: right; */
       padding: 10px 10px;
-			margin:0 auto;
-      /* margin-left: 45%; */
-      /* margin-right: 40%; */
+      margin:0 auto;
     }
     #pictures {
           display: flex;
           width: 100%;
-          /* padding: 10px 10px 10px 10px; */
           justify-content: center;
           align-content: center;
           justify-content: space-between;
           justify-content: space-around;
-          /* justify-content: space-between; */
-          /* margin-left: 20px;
-          margin-right: 20px; */
        }
     .mainImages {
       transform: rotate(90deg);
       width: 267px;
       height: 201px;
       border-radius: 100px;
-      /* float: left; */
     }
     .fImage {
       width: 267px;
       height: 201px;
       border-radius: 50px;
-      /* float: left; */
     }
     .fImage2 {
       width: 150px;
       height: 201px;
       border-radius: 50px;
-      /* float: left; */
     }
 		#container {
 			height: 100%;
