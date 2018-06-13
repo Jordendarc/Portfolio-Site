@@ -17,8 +17,7 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-MW3R9H6');</script>
   <!-- End Google Tag Manager -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
-
+  
     <title>Login</title>
     <link href="app.css" rel="stylesheet" type="text/css">
     <link href="jquery-ui-1.11.4.custom/jquery-ui.min.css" rel="stylesheet" type="text/css">
@@ -36,6 +35,7 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MW3R9H6"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+  
   <div class="container" id="background">
     <h1 id = "superHeader"> Welcome to Jorden Carter-Whitbey's Portfolio Site</h1>
 
