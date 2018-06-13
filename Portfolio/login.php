@@ -1,24 +1,15 @@
 <?php
-	/* Created by Professor Wergeles for CS2830 at the University of Missouri */
-
-	// Here we are using sessions to propagate the login
-	// http://us3.php.net/manual/en/intro.session.php
-
     // HTTPS redirect
     if ($_SERVER['HTTPS'] !== 'on') {
 		$redirectURL = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 		header("Location: $redirectURL");
 		exit;
 	}
-
-	// http://us3.php.net/manual/en/function.session-start.php
 	if(!session_start()) {
 		// If the session couldn't start, present an error
 		header("Location: error.php");
 		exit;
 	}
-
-
 	// Check to see if the user has already logged in
 	$loggedIn = empty($_SESSION['loggedin']) ? false : $_SESSION['loggedin'];
 
@@ -44,7 +35,7 @@
     if(!$captcha){
       login_form();
     }
-    $secretKey = "6Lf7D14UAAAAAP5bqhCTlspEShoTFoYlsngKu6lL";
+    $secretKey = "SECRET_KEY_HERE";
     $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha);
     $responseKeys = json_decode($response,true);
     if(intval($responseKeys["success"]) !== 1){
@@ -72,13 +63,6 @@
 
        // Connect to the database
        $mysqli = new mysqli('localhost', 'ec2-user', 'jorden', 'CS283');
-
-//        // Check for errors
-//        if ($mysqli->connect_error) {
-//            $error = 'Error (' . $mysqli->connect_errno . ') ' . $mysqli->connect_error;
-//			require "login_form.php";
-//            exit;
-//        }
         $username = $mysqli->real_escape_string($username);
         $password = $mysqli->real_escape_string($password);
 
